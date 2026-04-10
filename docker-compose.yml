@@ -16,9 +16,9 @@ services:
     # Or build locally (distroless, no shell):
     # build: .
     # Or build the Debian variant (includes bash, git, curl):
-    # build:
-    #   context: .
-    #   dockerfile: Dockerfile.debian
+    build:
+      context: .
+      dockerfile: Dockerfile.debian
     container_name: zeroclaw
     restart: unless-stopped
     
