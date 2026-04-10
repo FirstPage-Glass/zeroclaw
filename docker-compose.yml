@@ -12,13 +12,13 @@ services:
     # image: ghcr.io/zeroclaw-labs/zeroclaw:latest
     # For ARM64 environments where the distroless image exits immediately,
     # switch to the Debian compatibility image instead:
-    # image: ghcr.io/zeroclaw-labs/zeroclaw:debian
+    image: ghcr.io/zeroclaw-labs/zeroclaw:debian
     # Or build locally (distroless, no shell):
     # build: .
     # Or build the Debian variant (includes bash, git, curl):
-    build:
-      context: .
-      dockerfile: Dockerfile.debian
+    # build:
+    #   context: .
+    #   dockerfile: Dockerfile.debian
     container_name: zeroclaw
     restart: unless-stopped
     
